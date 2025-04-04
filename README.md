@@ -1,76 +1,67 @@
-# Análise de Crédito Bancário
+# 💳 Análise de Crédito - Classificação de Risco
 
-Este projeto tem como objetivo explorar e analisar dados de clientes de uma instituição financeira para entender os fatores que influenciam a inadimplência (default) dos clientes. O conjunto de dados contém informações como idade, sexo, escolaridade, estado civil, salário anual, tipo de cartão, meses de relacionamento, quantidade de produtos, iterações nos últimos 12 meses, meses inativos nos últimos 12 meses, limite de crédito, valor das transações nos últimos 12 meses e quantidade de transações nos últimos 12 meses.
+Este projeto tem como objetivo realizar uma análise exploratória e aplicar modelos de Machine Learning para prever o risco de crédito de clientes com base em variáveis demográficas e financeiras.
 
-## Objetivo
+---
 
-O principal objetivo deste projeto é identificar padrões e comportamentos que possam explicar por que um cliente deixa de honrar suas dívidas (inadimplência) com base em outros atributos, como salário, escolaridade e movimentação financeira.
+## 🎯 Objetivo
 
-## Estrutura do Projeto
+Prever se um cliente é **"bom pagador"** ou **"mau pagador"** com base em seus dados, utilizando técnicas de **classificação supervisionada**.
 
-O projeto está organizado da seguinte forma:
+---
 
-1. **Exploração de Dados**: 
-   - Leitura dos dados em um DataFrame pandas.
-   - Análise inicial da estrutura dos dados.
-   - Verificação de dados faltantes.
-   - Análise de atributos categóricos e numéricos.
+## 📊 Dataset
 
-2. **Transformação e Limpeza de Dados**:
-   - Correção do schema das colunas.
-   - Remoção de dados faltantes.
-   - Conversão de colunas categóricas para numéricas quando necessário.
+- Base de dados simulada para análise de crédito.
+- Contém informações como: idade, renda, score de crédito, histórico de pagamentos, entre outras.
 
-3. **Análise de Dados**:
-   - Análise de proporções de clientes adimplentes e inadimplentes.
-   - Exploração de correlações entre variáveis.
-   - Visualização de dados para identificar padrões.
+---
 
-4. **Conclusões**:
-   - Identificação de fatores que influenciam a inadimplência.
-   - Sugestões para mitigação de riscos de crédito.
+## ⚙️ Tecnologias e Bibliotecas
 
-## Dados
+- Python
+- Pandas, NumPy
+- Matplotlib, Seaborn
+- Scikit-learn
+- Jupyter Notebook
 
-O conjunto de dados utilizado neste projeto está no formato CSV e contém as seguintes colunas:
+---
 
-- `id`: Identificador único do cliente.
-- `default`: Indicador de inadimplência (0 = adimplente, 1 = inadimplente).
-- `idade`: Idade do cliente.
-- `sexo`: Sexo do cliente (M ou F).
-- `dependentes`: Número de dependentes do cliente.
-- `escolaridade`: Nível de escolaridade do cliente.
-- `estado_civil`: Estado civil do cliente.
-- `salario_anual`: Faixa salarial anual do cliente.
-- `tipo_cartao`: Tipo de cartão do cliente.
-- `meses_de_relacionamento`: Tempo de relacionamento com a instituição financeira em meses.
-- `qtd_produtos`: Quantidade de produtos contratados pelo cliente.
-- `iteracoes_12m`: Número de iterações com a instituição nos últimos 12 meses.
-- `meses_inativo_12m`: Número de meses inativos nos últimos 12 meses.
-- `limite_credito`: Limite de crédito do cliente.
-- `valor_transacoes_12m`: Valor total das transações nos últimos 12 meses.
-- `qtd_transacoes_12m`: Quantidade de transações nos últimos 12 meses.
+## 📈 Etapas do Projeto
 
-## Requisitos
+1. **Importação e visualização dos dados**
+2. **Análise exploratória (EDA)**
+3. **Tratamento de valores ausentes**
+4. **Criação de variáveis dummies**
+5. **Normalização dos dados**
+6. **Divisão treino/teste**
+7. **Modelagem com algoritmos de classificação:**
+   - Regressão Logística
+   - Random Forest
+   - KNN
+8. **Avaliação dos modelos**
+   - Acurácia
+   - Matriz de Confusão
+   - Curva ROC (se aplicável)
 
-Para executar este projeto, você precisará das seguintes bibliotecas Python:
+---
 
-- `pandas`
-- `numpy`
-- `matplotlib`
-- `seaborn`
+## 📌 Resultados
 
-Você pode instalar as dependências necessárias usando o seguinte comando:
+O modelo de melhor desempenho foi o **Random Forest**, com acurácia de aproximadamente XX% _(substituir depois pela sua métrica real)_ na base de teste.
 
-```bash
-pip install pandas numpy matplotlib seaborn
+---
 
-git clone https://github.com/fabiooliveira95/analise-de-credito-bancario.git
+## 🧠 Conclusões
 
-cd analise-de-credito-bancario
+- Algoritmos de classificação são eficazes para prever risco de crédito.
+- A engenharia de atributos e a limpeza de dados são essenciais para o desempenho do modelo.
+- O projeto pode ser expandido com análise de importância de variáveis e otimização de hiperparâmetros.
 
-jupyter notebook analise_de_credito-bancario.ipynb
+---
 
+## 🧑‍💻 Autor: Fabio Oliveira
 
-Este `README.md` fornece uma visão geral do projeto, incluindo objetivos, estrutura, dados utilizados,
-requisitos,instruções de execução, resultados e conclusões. Você pode personalizá-lo conforme necessário para refletir melhor o seu trabalho.
+Desenvolvido por [Fábio Oliveira](https://www.linkedin.com/in/fabiooliveira95/)  
+Estudante de Ciência de Dados | EBAC | Mentorama | Estácio
+
