@@ -19,11 +19,15 @@ Prever se um cliente é **"bom pagador"** ou **"mau pagador"** com base em seus 
 
 ## ⚙️ Tecnologias e Bibliotecas
 
-- Python
-- Pandas, NumPy
-- Matplotlib, Seaborn
-- Scikit-learn
-- Jupyter Notebook
+- Python 3
+- jupyter notebook
+- Bibliotecas:
+- ``Pandas``
+- ``NumPy``
+- ``Matplotlib``
+- ``Seaborn``
+- ``Scikit-learn``
+- ``Jupyter Notebook``
 
 ---
 
