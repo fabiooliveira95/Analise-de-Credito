@@ -60,8 +60,8 @@ O modelo de melhor desempenho foi o **Random Forest**, com acurácia de aproxima
 
 ---
 
-## 🧑‍💻 Autor
+## 📬 Contato
 
-Desenvolvido por [Fábio Oliveira](https://www.linkedin.com/in/fabio-oliveira-araujo-cientista//)  
-
-
+Fábio Oliveira  
+🔗 [LinkedIn](https://www.linkedin.com/in/fabio-oliveira-araujo-cientista/)  
+📧 fabiooliveira0067@gmail.com
